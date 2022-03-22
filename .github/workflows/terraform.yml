@@ -12,8 +12,8 @@ jobs:
         working-directory: ./vpc 
       
     env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_ACCESS_KEY_ID: AKIATTVV23IXS5YXEZX7
+      AWS_SECRET_ACCESS_KEY: 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
       AWS_REGION: "us-east-1"
       
     steps:
