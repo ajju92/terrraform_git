@@ -23,7 +23,6 @@ jobs:
       - name: Set branch name environment variable.
         run: |
           branch_name=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}
-          echo "branch_name=$branch_name" >> $GITHUB_ENV
       - run: terraform init
       - run: terraform validate
       - run: terraform plan 
