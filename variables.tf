@@ -8,10 +8,6 @@ variable "region" {
   default     = "us-east-1"
 }
 
-variable "branch" {
-  description = "branch name"
-  default     = "main"
-}
 
 variable "vpcs" {
   description = "Map of vpc names to create"
