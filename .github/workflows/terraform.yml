@@ -19,8 +19,15 @@ jobs:
         with:
           # terraform_version: 0.13.0:
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
-
-      - name: Terraform Init
+          
+      - name: AWS configure
+        uses: hashicorp/setup-terraform@v1
+        with:
+          # terraform_version: 0.13.0:
+          cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+          
+      - name: Terraform Init -backend-config="access_key=AKIATTVV23IXS5YXEZX7" -backend-config="secret_key=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
+" -backend-config="region=us-east-2"
         id: init
         run: terraform init
       
