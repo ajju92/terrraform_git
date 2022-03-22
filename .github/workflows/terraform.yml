@@ -26,3 +26,4 @@ jobs:
           echo "branch_name=$branch_name" >> $GITHUB_ENV
       - run: terraform init
       - run: terraform validate
+      - run: terraform plan
