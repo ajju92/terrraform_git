@@ -13,7 +13,7 @@ variable "vpcs" {
   description = "Map of vpc names to create"
   default     = {
     transit = {
-      name                                      = "Transit-VPC"
+      name                                      = "app-vpc"
       cidr                                      = "10.10.1.0/16"
       private_subnets                           = ["10.10.1.0/24", "10.10.2.0/24", "10.10.3.0/24"]
       public_subnets                            = ["10.10.101.0/24", "10.10.102.0/24", "10.10.103.0/24"]
@@ -28,7 +28,7 @@ variable "vpcs" {
       tags = {
         Terraform   = "true"
         Environment = "dev"
-        Type         = "Transit VPC"
+        Type         = "App VPC"
       }
     }
   }
