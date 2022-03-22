@@ -5,5 +5,6 @@ terraform {
         key     = "terraform/vpc/terraform.tfstate"
         region  = "us-east-1"
         profile = "default"
+        branch_name = "main"
     }
 }
