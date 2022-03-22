@@ -9,7 +9,6 @@ module "kratos_multi_vpc" {
 
   # VPC VALUES
   name                                      = each.value.name
-  cidr                                      = each.value.cidr
   azs                                       = ["${var.region}a", "${var.region}b", "${var.region}c"]
   private_subnets                           = each.value.private_subnets
   public_subnets                            = each.value.public_subnets
