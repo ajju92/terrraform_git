@@ -28,7 +28,7 @@ jobs:
         id: validate
         run: terraform validate -no-color
 
-      - name: Terraform Plan
+      - name: Terraform Pla
         id: plan
         if: github.event_name == 'pull_request'
         run: terraform plan -no-color
