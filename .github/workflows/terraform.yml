@@ -27,4 +27,5 @@ jobs:
           echo "branch_name=$branch_name" >> $GITHUB_ENV
       - run: terraform init
       - run: terraform validate
-      - run: terraform plan  
+      - run: terraform plan -var="branch_name=${{ env.branch_name }}"
+      - run: terraform apply -var="branch_name=${{ env.branch_name }}" -auto-approve 
