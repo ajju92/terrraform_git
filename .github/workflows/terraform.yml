@@ -12,9 +12,9 @@ jobs:
         working-directory: ./vpc 
       
     env:
-      AWS_ACCESS_KEY_ID: AKIATTVV23IXS5YXEZX7
-      AWS_SECRET_ACCESS_KEY: 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
-      AWS_REGION: "us-east-1"
+      AWS_ACCESS_KEY_ID: AKIATTVV23IXR3VM3R4B
+      AWS_SECRET_ACCESS_KEY: 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
+      AWS_REGION: "us-east-2"
       
     steps:
       - uses: actions/checkout@v2
