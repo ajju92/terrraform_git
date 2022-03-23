@@ -11,7 +11,7 @@ variable "region" {
 variable "network_name" {
   type        = string
   description = "Name to be used for VPC resources"
-  default = "app-vpc"
+  default = "application-vpc"
 }
 
 variable "cidr_block" {
